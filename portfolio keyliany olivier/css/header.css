@@ -1,0 +1,54 @@
+header {
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items:center;
+    background-color:var(--background-color);
+    height: 80px;
+    margin-inline: auto;
+    max-width: 1000px;
+    position: relative;
+    margin-bottom: 5%;
+}
+.logo{
+    left: 0;
+    position: absolute;
+}
+
+.nombre{
+    font-family: var(--font-title);
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    left: 10%;
+    position: absolute;
+}
+.nombre:hover{
+    color: var(--background-color3);
+}
+.menu ul{
+    color: white;
+    display: flex;
+    gap: 40px;
+    position: absolute;
+    right: 5%;
+    font-family: var(--font-title);
+    font-size: 15px;
+    font-weight: 400;
+ }
+ .menu ul li::before {
+    position: absolute;
+    content: " ";
+    width: 15%;
+    height:2px;
+    background-color: var(--background-color3);
+    top: 110%;
+    transition:step-start 1s
+ }
+ .menu ul li:hover::before {
+    width: 10%; 
+    left: 20%; 
+ }
+ .menu ul li:hover{
+    color: var(--background-color4);
+ }

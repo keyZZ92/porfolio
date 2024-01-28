@@ -1,0 +1,21 @@
+:where(:not(html, iframe, canvas, img, svg, video, audio) :not(svg *, symbol *)) {
+    all: unset;
+    display: revert;
+}
+:root{
+    --background-color1: rgb(91, 119, 223);
+    --background-color2: black;
+    --background-color3:rgb(236, 215, 106);
+    --background-color4:rgb(64, 64, 126);
+    --background-color5:rgb(78, 213, 215);
+
+    --font-text: 'Roboto', sans-serif;
+    --font-title: 'Roboto Condensed', sans-serif; 
+}
+body {
+    background-color:var(--background-color2);
+    margin: 0;
+}
+li {
+    list-style: none;
+}
